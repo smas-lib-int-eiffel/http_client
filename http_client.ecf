@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<system xmlns="http://www.eiffel.com/developers/xml/configuration-1-16-0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.eiffel.com/developers/xml/configuration-1-16-0 http://www.eiffel.com/developers/xml/configuration-1-16-0.xsd" name="pp_http_client" uuid="BD1A4F21-7622-4C35-BA15-550FFCB86738" library_target="pp_http_client">
+	<target name="pp_http_client">
+		<root all_classes="true"/>
+		<file_rule>
+			<exclude>/CVS$</exclude>
+			<exclude>/EIFGENs$</exclude>
+			<exclude>/\.git$</exclude>
+			<exclude>/\.svn$</exclude>
+		</file_rule>
+		<option warning="true">
+			<assertions precondition="true" postcondition="true" check="true" invariant="true" loop="true" supplier_precondition="true"/>
+		</option>
+		<capability>
+			<concurrency support="none"/>
+		</capability>
+		<library name="base" location="$ISE_LIBRARY/library/base/base.ecf"/>
+		<library name="alpha_config" location="$ISE_LIBRARY/external/library/config/config.ecf"/>
+		<library name="encoder" location="$ISE_LIBRARY/contrib/library/web/framework/ewf/text/encoder/encoder.ecf"/>
+		<library name="shared_logging" location="$ISE_LIBRARY/external/library/runtime/logging/shared/shared_logging.ecf" readonly="false"/>
+		<library name="json" location="$ISE_LIBRARY/contrib/library/text/parser/json/library/json.ecf"/>
+		<library name="alpha_json" location="$ISE_LIBRARY/external/library/text/parser/json/json.ecf"/>
+		<library name="http" location="$ISE_LIBRARY/contrib/library/network/protocol/http/http-safe.ecf"/>
+		<library name="http_client" location="$ISE_LIBRARY/contrib/library//network/http_client/libcurl_http_client.ecf"/>
+		<cluster name="alpha_http_client" location="./src" recursive="true"/>
+	</target>
+</system>
